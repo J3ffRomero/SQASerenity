@@ -1,0 +1,9 @@
+pluginManagement {
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'SeleniumAutomation'
+include('app')

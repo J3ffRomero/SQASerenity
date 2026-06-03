@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.automation.features.ObtenerPersonaTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-05-27T20:52:22.245Z" hostname="jeferson-vega" time="0.969">
+  <properties/>
+  <testcase name="obtenerPersonas()" classname="com.automation.features.ObtenerPersonaTest" time="0.964"/>
+  <system-out><![CDATA[Request method:	GET
+Request URI:	https://gorest.co.in/public/v2/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer ecf1c46e8359fbdbff14869ac8a7880b99d6b1564e9675843e6665d0061ba199
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+Request URI:	https://gorest.co.in/public/v2/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer ecf1c46e8359fbdbff14869ac8a7880b99d6b1564e9675843e6665d0061ba199
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 27 May 2026 20:52:22 GMT
+Content-Type: application/json; charset=utf-8
+Connection: keep-alive
+Cache-Control: max-age=0, private, must-revalidate
+content-security-policy-report-only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-TeBDKbEcled7eWipZo8ZoQ=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+etag: W/"a5236daa75255cc7703b6eaefdcdc98d"
+feature-policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=63072000; includeSubDomains
+vary: Origin
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-links-current: https://gorest.co.in/public/v2/users?page=1
+x-links-next: https://gorest.co.in/public/v2/users?page=2
+x-links-previous: 
+x-pagination-limit: 10
+x-pagination-page: 1
+x-pagination-pages: 298
+x-pagination-total: 2980
+x-permitted-cross-domain-policies: none
+x-ratelimit-limit: 90
+x-ratelimit-remaining: 89
+x-ratelimit-reset: 1
+x-request-id: 9331b663-3567-4597-ae04-8151d6ac6d34
+x-runtime: 0.067862
+x-xss-protection: 0
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-cache-status: DYNAMIC
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=BMwoxtJS4LGTnXWzPjOTRtoW3YgE%2BvN%2BFmFiS8T98J77yJEMD968GNbxsbJs5jIz7dp6mEq7CPeumygmGvKE3oRpQr1o%2BB32v%2FeacpCsBPt5ztnfgCrLwnmKT3sgTGc%3D"}]}
+Content-Encoding: gzip
+Server: cloudflare
+CF-RAY: a027e7294b223d4f-MIA
+Content-Length: 386
+
+[
+    {
+        "id": 8480962,
+        "name": "Ronnie",
+        "email": "max.hayes@hotmail.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 8480476,
+        "name": "Boyce",
+        "email": "lawerence.hammes@yahoo.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 8480955,
+        "name": "Manuela",
+        "email": "lucia.quesada@hotmail.com",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 8480531,
+        "name": "Carmen",
+        "email": "ariadna.tejeda@hotmail.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 8477216,
+        "name": "Shashi Khan",
+        "email": "khan_shashi@schuppe-jacobi.test",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 8477215,
+        "name": "Gudakesha Kaul",
+        "email": "gudakesha_kaul@ebert-corwin.test",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 8477214,
+        "name": "Goswamee Iyengar",
+        "email": "iyengar_goswamee@carter.example",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 8477213,
+        "name": "Brahmdev Marar",
+        "email": "marar_brahmdev@kub.test",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 8477212,
+        "name": "Sanka Agarwal",
+        "email": "agarwal_sanka@kunze.example",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 8477210,
+        "name": "Bheeshma Banerjee",
+        "email": "bheeshma_banerjee@little.example",
+        "gender": "male",
+        "status": "active"
+    }
+]
+Cantidad Usuarios encontrados: 10
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

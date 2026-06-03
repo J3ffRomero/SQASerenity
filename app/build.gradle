@@ -1,0 +1,74 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.diffplug.spotless' version '6.22.0'
+    id 'net.serenity-bdd.serenity-gradle-plugin' version '4.1.14'
+}
+
+application {
+    mainClass = 'com.automation.App'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Serenity BDD
+    def serenityVersion = '4.1.20'
+
+    // Serenity Core & JUnit 5
+    implementation "net.serenity-bdd:serenity-core:${serenityVersion}"
+    implementation "net.serenity-bdd:serenity-junit5:${serenityVersion}"
+    implementation "net.serenity-bdd:serenity-model:${serenityVersion}" // ¡Aquí está tu EnvironmentConfig!
+
+    // Screenplay (Web & REST)
+    implementation "net.serenity-bdd:serenity-screenplay:${serenityVersion}"
+    implementation "net.serenity-bdd:serenity-screenplay-webdriver:${serenityVersion}"
+    implementation "net.serenity-bdd:serenity-screenplay-rest:${serenityVersion}"
+    implementation "net.serenity-bdd:serenity-rest-assured:${serenityVersion}"
+
+    // Selenium & Drivers
+    implementation 'org.seleniumhq.selenium:selenium-java:4.25.0'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.9.2'
+
+    // Lombok (Para @Data, @Builder)
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+    testCompileOnly 'org.projectlombok:lombok:1.18.30'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    // Utilidades
+    implementation 'com.github.javafaker:javafaker:1.0.2'
+
+    // JUnit 5 Configuración estándar
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+}
+
+
+
+test {
+    useJUnitPlatform()
+    
+    // Show test output in console
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
+spotless {
+    java {
+        target("src//java/**/.java")
+        googleJavaFormat('1.25.2').aosp()
+        replaceRegex(
+                'SpaceAfterClass',
+                '(?m)^([^\\n](?:class|interface|enum|record)[^\\n]\\{)\\r?\\n(?!\\s*\\r?\\n)',
+                '$1\n\n'
+        )
+        removeUnusedImports()
+        trimTrailingWhitespace()
+        endWithNewline()
+    }
+}
