@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="com.automation.features.EliminarUsuarioTest" skipped="0" tests="1" time="0.85" timestamp="2026-06-10 02:49:19"><testcase classname="com.automation.features.EliminarUsuarioTest" name="Eliminar usuario"><failure message="&#10;Expected: is &lt;204&gt;&#10;     but: was &lt;404&gt;" type="java.lang.AssertionError">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="com.automation.features.EliminarUsuarioTest" skipped="0" tests="1" time="0.76" timestamp="2026-06-10 03:11:23"><testcase classname="com.automation.features.EliminarUsuarioTest" name="Eliminar usuario"><failure message="&#10;Expected: is &lt;204&gt;&#10;     but: was &lt;404&gt;" type="java.lang.AssertionError">
 Expected: is &lt;204&gt;
      but: was &lt;404&gt;</failure><system-err>
 Expected: is &lt;204&gt;

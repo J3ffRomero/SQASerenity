@@ -4,11 +4,13 @@ package com.automation.tasks;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import com.automation.interactions.MetodoDelete;
+import net.thucydides.model.util.EnvironmentVariables;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class EliminarUsuarioTask implements Task {
     private final int usuarioID;
+    private EnvironmentVariables enviromentVariables;
 
     public EliminarUsuarioTask(int usuarioID){
         this.usuarioID = usuarioID;
@@ -19,7 +21,7 @@ public class EliminarUsuarioTask implements Task {
         actor.attemptsTo(
                 MetodoDelete.to("/users/" + usuarioID)
                         .with(request->request
-                                .header("Authorization", "Bearer " + "ecf1c46e8359fbdbff14869ac8a7880b99d6b1564e9675843e6665d0061ba199")
+                                .header("Authorization", "Bearer " + enviromentVariables.getProperty("token"))
                                 .log().all())
         );
     }

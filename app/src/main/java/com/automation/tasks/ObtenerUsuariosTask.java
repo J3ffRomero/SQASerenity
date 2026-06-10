@@ -5,8 +5,11 @@ import net.serenitybdd.screenplay.Task;
 import com.automation.interactions.MetodoGet;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
+import net.thucydides.model.util.EnvironmentVariables;
 
 public class ObtenerUsuariosTask implements Task {
+
+    private EnvironmentVariables enviromentVariables;
 
     @Override
     public <T extends Actor> void performAs(T actor) {
@@ -14,7 +17,7 @@ public class ObtenerUsuariosTask implements Task {
                 MetodoGet.to("/users")
                         .with(request -> request
                                 .header("Authorization",
-                                        "Bearer ecf1c46e8359fbdbff14869ac8a7880b99d6b1564e9675843e6665d0061ba199")
+                                        "Bearer " + enviromentVariables.getProperty("token"))
                                 .header("Content-Type", "application/json")
                                 .log().all()));
     }

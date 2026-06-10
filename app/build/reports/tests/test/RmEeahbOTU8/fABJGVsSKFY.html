@@ -18,7 +18,7 @@
 <div class="tab-container">
 <ul class="tabLinks">
 <li>
-<a class="failureGroup" href="#">Gradle Test Run :app:test</a>
+<a class="successGroup" href="#">Gradle Test Run :app:test</a>
 </li>
 </ul>
 <div class="tab">
@@ -51,7 +51,7 @@
 </td>
 <td>
 <div class="infoBox">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -63,7 +63,7 @@
 </td>
 <td>
 <div class="infoBox duration">
-<div class="counter">2.251s</div>
+<div class="counter">2.285s</div>
 <p>duration</p>
 </div>
 </td>
@@ -72,32 +72,13 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures successRate">
-<div class="percent">0%</div>
+<div class="infoBox success successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
 </tr>
 </table>
-</div>
-<div class="result-details">
-<h3>Failure details</h3>
-<span class="code">
-<pre id="root-0-test-failure-actualizarUsuarioMethod()">java.lang.AssertionError: 
-Expected: is &lt;200&gt;
-     but: was &lt;404&gt;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-	at net.serenitybdd.screenplay.QuestionConsequence.evaluateFor(QuestionConsequence.java:49)
-	at net.serenitybdd.screenplay.Actor.check(Actor.java:420)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:392)
-	at com.automation.features.ActualizarUsuarioFeature.actualizarUsuarioMethod(ActualizarUsuarioFeature.java:39)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-</pre>
-<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-failure-actualizarUsuarioMethod()">Copy</button>
-</span>
 </div>
 </div>
 </div>
@@ -105,7 +86,7 @@ Expected: is &lt;200&gt;
 <h2>standard output</h2>
 <span class="code">
 <pre id="root-0-test-stdout-actualizarUsuarioMethod()">Request method:	PUT
-Request URI:	https://gorest.co.in/public/v2/users/8480476
+Request URI:	https://gorest.co.in/public/v2/users/8496204
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -118,13 +99,13 @@ Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:
 {
-    &quot;name&quot;: &quot;Lewis&quot;,
-    &quot;email&quot;: &quot;mahalia.gerlach@gmail.com&quot;,
-    &quot;gender&quot;: &quot;Female&quot;,
-    &quot;status&quot;: &quot;active&quot;
+    &quot;name&quot;: &quot;Numbers&quot;,
+    &quot;email&quot;: &quot;fredia.toy@yahoo.com&quot;,
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;status&quot;: &quot;inactive&quot;
 }
 Request method:	PUT
-Request URI:	https://gorest.co.in/public/v2/users/8480476
+Request URI:	https://gorest.co.in/public/v2/users/8496204
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -137,17 +118,18 @@ Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:
 {
-    &quot;name&quot;: &quot;Lewis&quot;,
-    &quot;email&quot;: &quot;mahalia.gerlach@gmail.com&quot;,
-    &quot;gender&quot;: &quot;Female&quot;,
-    &quot;status&quot;: &quot;active&quot;
+    &quot;name&quot;: &quot;Numbers&quot;,
+    &quot;email&quot;: &quot;fredia.toy@yahoo.com&quot;,
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;status&quot;: &quot;inactive&quot;
 }
-HTTP/1.1 404 Not Found
-Date: Wed, 10 Jun 2026 19:49:17 GMT
+HTTP/1.1 200 OK
+Date: Wed, 10 Jun 2026 20:11:22 GMT
 Content-Type: application/json; charset=utf-8
 Connection: keep-alive
-Cache-Control: no-cache
-Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-D6Adci0YM9Xleulj9Q+tPw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+Cache-Control: max-age=0, private, must-revalidate
+Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-ILA+qqVVr4zp5Y5Uz9A4zA=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+Etag: W/&quot;d95231c72a03fcb6331d9ffb06b018bf&quot;
 Feature-Policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
 Referrer-Policy: strict-origin-when-cross-origin
 Strict-Transport-Security: max-age=63072000; includeSubDomains
@@ -158,18 +140,23 @@ X-Permitted-Cross-Domain-Policies: none
 X-Ratelimit-Limit: 300
 X-Ratelimit-Remaining: 299
 X-Ratelimit-Reset: 0
-X-Request-Id: 9295774b-deec-4614-93fc-820c63ec4ce4
-X-Runtime: 0.020199
+X-Request-Id: cb764096-6929-4a8c-b892-ca1a9ca3ccfb
+X-Runtime: 0.042982
 X-Xss-Protection: 0
 Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
 Cf-Cache-Status: DYNAMIC
-Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=qF3orQE3B%2BRBtWtTRpL7BGyFKkddt0WoxznIWNxLUj5qrkWm5CXNvFPYyqtqOpij5W%2BSm1aUN9Hb5eU%2Bm4YEFhmcoIT6etyLuCLqFkj31wZ%2Ffpep5RshOY01FrI90NE%3D&quot;}]}
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=3yRzF6pBIjEMB08K%2BsRjBUoe%2B4a6leYfLL2a7HP4PoslBDCJV9vkiyWovICVDO%2FqXFxluTbSnOvaWFKZk%2Bq9EaYtasS9tP4ap%2FJsALCq5i%2F6KwgbC%2BT3JT67j2YDPMc%3D&quot;}]}
+Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: a09ae5fc5d8c4adf-MIA
-Content-Length: 32
+CF-RAY: a09b06567d440c57-MIA
+Content-Length: 107
 
 {
-    &quot;message&quot;: &quot;Resource not found&quot;
+    &quot;id&quot;: 8496204,
+    &quot;name&quot;: &quot;Numbers&quot;,
+    &quot;email&quot;: &quot;fredia.toy@yahoo.com&quot;,
+    &quot;gender&quot;: &quot;male&quot;,
+    &quot;status&quot;: &quot;inactive&quot;
 }
 </pre>
 <button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stdout-actualizarUsuarioMethod()">Copy</button>
@@ -185,7 +172,7 @@ Content-Length: 32
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 9.5.0</a> at Jun 10, 2026, 2:49:21 PM</p>
+<a href="https://www.gradle.org">Gradle 9.5.0</a> at Jun 10, 2026, 3:11:30 PM</p>
 </div>
 </div>
 </body>

@@ -34,7 +34,7 @@ public class ActualizarUsuarioFeature extends BaseTest {
     @Test
     public void actualizarUsuarioMethod() {
         PersonaRequest persona = PersonFactory.crearPersona();
-        david.attemptsTo(ActualizarUsuarioTask.actualizar(persona, 8480476));
+        david.attemptsTo(ActualizarUsuarioTask.actualizar(persona, 8496204));
 
         david.should(seeThat("El codigo fue 200", RespuestaCode.es(), is(200)),
                 seeThat("El nombre nuevo del usuario es: ",

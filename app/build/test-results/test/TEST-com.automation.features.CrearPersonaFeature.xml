@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.automation.features.CrearPersonaFeature" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-06-10T19:49:17.475Z" hostname="jeferson-vega" time="1.594">
+<testsuite name="com.automation.features.CrearPersonaFeature" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-06-10T20:11:22.478Z" hostname="jeferson-vega" time="0.85">
   <properties/>
-  <testcase name="crearPersona()" classname="com.automation.features.CrearPersonaFeature" time="1.584"/>
+  <testcase name="crearPersona()" classname="com.automation.features.CrearPersonaFeature" time="0.842"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://gorest.co.in/public/v2/users
 Proxy:			<none>
@@ -16,10 +16,10 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "Derick",
-    "email": "tessie.rau@gmail.com",
+    "name": "Loyce",
+    "email": "cherrie.jast@yahoo.com",
     "gender": "Female",
-    "status": "active"
+    "status": "inactive"
 }
 Request method:	POST
 Request URI:	https://gorest.co.in/public/v2/users
@@ -35,20 +35,20 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "Derick",
-    "email": "tessie.rau@gmail.com",
+    "name": "Loyce",
+    "email": "cherrie.jast@yahoo.com",
     "gender": "Female",
-    "status": "active"
+    "status": "inactive"
 }
 HTTP/1.1 201 Created
-Date: Wed, 10 Jun 2026 19:49:19 GMT
+Date: Wed, 10 Jun 2026 20:11:23 GMT
 Content-Type: application/json; charset=utf-8
 Connection: keep-alive
 Cache-Control: max-age=0, private, must-revalidate
-Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-ICk/PeCbwM7OT6L5nmpdJw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
-Etag: W/"0498da56a00a1270c54b8aba6240fdba"
+Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-IiTlhGR01LIkvr30Rlio0Q=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+Etag: W/"665fd5f5ede4bad7386653cb1c7c6b36"
 Feature-Policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
-Location: https://gorest.co.in/public/v2/users/8500529
+Location: https://gorest.co.in/public/v2/users/8500543
 Referrer-Policy: strict-origin-when-cross-origin
 Strict-Transport-Security: max-age=63072000; includeSubDomains
 Vary: Origin
@@ -58,22 +58,22 @@ X-Permitted-Cross-Domain-Policies: none
 X-Ratelimit-Limit: 300
 X-Ratelimit-Remaining: 299
 X-Ratelimit-Reset: 0
-X-Request-Id: a483463e-af53-43e9-a751-558bddc3aa00
-X-Runtime: 0.060307
+X-Request-Id: dc27ceac-d01d-44c8-912b-2c4a82f42731
+X-Runtime: 0.034327
 X-Xss-Protection: 0
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
 Cf-Cache-Status: DYNAMIC
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2FwRYHj4SSXR05HbsD4tAQH9SU6oSKGqVwlrUJwpcbn0GJH2mEPLqQ%2BAnzy%2Bx7%2BgBLlVYwmoWyVGGbid0imP3EjHHqFCglU6Ua4PxFioESbMdS0ucTCgCZYmvJ8GsoDE%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=VhFeQmOH0avR3xgkfoxXQ2mCGxn8r4alovdMgwfpK%2BK5vIxhJofEzspKQYnvecNEPGHOFf%2BudRtVRNONzHkYrVbZ0OeX9ztp8WKKWzi%2FoVd%2FqUV%2B%2BcPouo16%2B8lO6Ks%3D"}]}
 Server: cloudflare
-CF-RAY: a09ae6037b1e1350-MIA
-Content-Length: 97
+CF-RAY: a09b065c6c964fce-MIA
+Content-Length: 100
 
 {
-    "id": 8500529,
-    "name": "Derick",
-    "email": "tessie.rau@gmail.com",
+    "id": 8500543,
+    "name": "Loyce",
+    "email": "cherrie.jast@yahoo.com",
     "gender": "female",
-    "status": "active"
+    "status": "inactive"
 }
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

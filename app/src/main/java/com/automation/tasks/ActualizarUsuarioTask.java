@@ -5,11 +5,13 @@ import net.serenitybdd.screenplay.Task;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import com.automation.interactions.MetodoPut;
+import net.thucydides.model.util.EnvironmentVariables;
 
 
 public class ActualizarUsuarioTask implements Task {
     private final int usuarioID;
     private final Object usuario;
+    private EnvironmentVariables enviromentVariables;
 
     public ActualizarUsuarioTask(int usuarioID, Object usuario) {
         this.usuarioID = usuarioID;
@@ -18,10 +20,11 @@ public class ActualizarUsuarioTask implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
+        
         actor.attemptsTo(
                 MetodoPut.to("/users/"+usuarioID)
                         .with(request->request
-                                .header("Authorization", "Bearer ecf1c46e8359fbdbff14869ac8a7880b99d6b1564e9675843e6665d0061ba199")
+                                .header("Authorization", "Bearer "+ enviromentVariables.getProperty("token"))
                                 .header("Content-Type", "application/json")
                                 .body(usuario)
                                 .log().all())

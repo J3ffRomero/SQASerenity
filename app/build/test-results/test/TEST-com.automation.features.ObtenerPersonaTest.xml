@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.automation.features.ObtenerPersonaTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-06-10T19:49:19.975Z" hostname="jeferson-vega" time="1.097">
+<testsuite name="com.automation.features.ObtenerPersonaTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-06-10T20:11:24.169Z" hostname="jeferson-vega" time="6.016">
   <properties/>
-  <testcase name="obtenerPersonas()" classname="com.automation.features.ObtenerPersonaTest" time="1.084"/>
+  <testcase name="obtenerPersonas()" classname="com.automation.features.ObtenerPersonaTest" time="6.008"/>
   <system-out><![CDATA[Request method:	GET
 Request URI:	https://gorest.co.in/public/v2/users
 Proxy:			<none>
@@ -29,12 +29,12 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 10 Jun 2026 19:49:20 GMT
+Date: Wed, 10 Jun 2026 20:11:28 GMT
 Content-Type: application/json; charset=utf-8
 Connection: keep-alive
 Cache-Control: max-age=0, private, must-revalidate
-Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-CqrwzG3mZoy5nlB9c0qz9w=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
-Etag: W/"6ad3f706f60a23fb8fdccded2d13834e"
+Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-4PT6EbLkfg/X+GRsirc5Tw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+Etag: W/"3ca6d27123eb44589f08c02bc7769f6e"
 Feature-Policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
 Referrer-Policy: strict-origin-when-cross-origin
 Strict-Transport-Security: max-age=63072000; includeSubDomains
@@ -46,24 +46,66 @@ X-Links-Next: https://gorest.co.in/public/v2/users?page=2
 X-Links-Previous: 
 X-Pagination-Limit: 10
 X-Pagination-Page: 1
-X-Pagination-Pages: 296
-X-Pagination-Total: 2959
+X-Pagination-Pages: 297
+X-Pagination-Total: 2963
 X-Permitted-Cross-Domain-Policies: none
 X-Ratelimit-Limit: 300
 X-Ratelimit-Remaining: 299
 X-Ratelimit-Reset: 0
-X-Request-Id: 74c25676-13fc-4f52-9f6a-1889399fcebb
-X-Runtime: 0.060482
+X-Request-Id: 7d954154-d8fa-45a2-8559-7bcd2f227564
+X-Runtime: 0.066799
 X-Xss-Protection: 0
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
 Cf-Cache-Status: DYNAMIC
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=DvhQaQP4Dpum8FSqU6LmuyXZacO3QuFKp07Lbhh%2Baq4MlNy3ZyJQu5qTezTUC2ivhbqHrbFr2a9%2Flw2EXV5EuuUT2IBZueL8QjxmgXCNvGDVRUZxEAMdGL85SqQalFg%3D"}]}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=dLlP7yUGkcW0MOHFWngELJsIN6p%2BNXdSuBvcW6OWkSqa2ijmkpRLsljgugGh%2B%2BpztEmyf09ft0JIn3cF8dJRXD34Y47qW1Lr%2FJ5LHmvI%2FVArD1iAVrfNL7OjJ7ZJc9c%3D"}]}
 Content-Encoding: gzip
 Server: cloudflare
-CF-RAY: a09ae612e975a274-MIA
-Content-Length: 383
+CF-RAY: a09b06669a69e9f5-MIA
+Content-Length: 3253
 
 [
+    {
+        "id": 8500543,
+        "name": "Loyce",
+        "email": "cherrie.jast@yahoo.com",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 8496204,
+        "name": "Numbers",
+        "email": "fredia.toy@yahoo.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 8500541,
+        "name": "Ty",
+        "email": "nickolas.schulist@gmail.com",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 8500540,
+        "name": "Susann",
+        "email": "marlon.mcglynn@gmail.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 8500538,
+        "name": "Karima",
+        "email": "cleveland.johnson@gmail.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 8500535,
+        "name": "Shyla",
+        "email": "alma.wiegand@gmail.com",
+        "gender": "male",
+        "status": "inactive"
+    },
     {
         "id": 8500529,
         "name": "Derick",
@@ -90,48 +132,6 @@ Content-Length: 383
         "name": "Jovita",
         "email": "justin.mccullough@gmail.com",
         "gender": "male",
-        "status": "inactive"
-    },
-    {
-        "id": 8500526,
-        "name": "Kendal",
-        "email": "stephan.fadel@hotmail.com",
-        "gender": "female",
-        "status": "inactive"
-    },
-    {
-        "id": 8500117,
-        "name": "Eugene",
-        "email": "marylouise.padberg@hotmail.com",
-        "gender": "female",
-        "status": "inactive"
-    },
-    {
-        "id": 8500111,
-        "name": "Daniel",
-        "email": "ali.zboncak@yahoo.com",
-        "gender": "male",
-        "status": "active"
-    },
-    {
-        "id": 8499420,
-        "name": "Rita Malik JD",
-        "email": "malik_jd_rita@marquardt.example",
-        "gender": "male",
-        "status": "inactive"
-    },
-    {
-        "id": 8499419,
-        "name": "Achalesvara Banerjee",
-        "email": "achalesvara_banerjee@johnston.example",
-        "gender": "male",
-        "status": "inactive"
-    },
-    {
-        "id": 8499418,
-        "name": "Agniprava Patel",
-        "email": "patel_agniprava@littel-hills.test",
-        "gender": "female",
         "status": "inactive"
     }
 ]
