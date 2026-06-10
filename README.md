@@ -10,7 +10,7 @@ IDE: Intellij y Antigravity
 
 Instalación
 
-1. Clonar el repositorio: "git clone https://github.com/XicYac52343/PracticaJUnit-Serenity"
+1. Clonar el repositorio: "git clone https://github.com/J3ffRomero/SQASerenity"
 2. Abrir el IDE deseado (Antigravity)
 3. Asegurarse de estar haciendo uso de la misma API
 4. Asegurarse de cambiar el token Bearer de la API

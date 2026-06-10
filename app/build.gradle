@@ -20,7 +20,7 @@ dependencies {
     // Serenity Core & JUnit 5
     implementation "net.serenity-bdd:serenity-core:${serenityVersion}"
     implementation "net.serenity-bdd:serenity-junit5:${serenityVersion}"
-    implementation "net.serenity-bdd:serenity-model:${serenityVersion}" // ¡Aquí está tu EnvironmentConfig!
+    implementation "net.serenity-bdd:serenity-model:${serenityVersion}"
 
     // Screenplay (Web & REST)
     implementation "net.serenity-bdd:serenity-screenplay:${serenityVersion}"
