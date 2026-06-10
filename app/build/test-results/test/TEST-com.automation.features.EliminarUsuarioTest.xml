@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.automation.features.EliminarUsuarioTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-06-10T14:26:02.916Z" hostname="jeferson-vega" time="1.546">
+<testsuite name="com.automation.features.EliminarUsuarioTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-06-10T19:49:19.106Z" hostname="jeferson-vega" time="0.852">
   <properties/>
-  <testcase name="eliminarUsuario()" classname="com.automation.features.EliminarUsuarioTest" time="1.538"/>
+  <testcase name="eliminarUsuario()" classname="com.automation.features.EliminarUsuarioTest" time="0.844">
+    <failure message="java.lang.AssertionError: &#10;Expected: is &lt;204&gt;&#10;     but: was &lt;404&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: is &lt;204&gt;
+     but: was &lt;404&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at net.serenitybdd.screenplay.QuestionConsequence.evaluateFor(QuestionConsequence.java:49)
+	at net.serenitybdd.screenplay.Actor.check(Actor.java:420)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:392)
+	at com.automation.features.EliminarUsuarioTest.eliminarUsuario(EliminarUsuarioTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
   <system-out><![CDATA[Request method:	DELETE
 Request URI:	https://gorest.co.in/public/v2/users/8499443
 Proxy:			<none>
@@ -28,11 +42,12 @@ Headers:		Authorization=Bearer ecf1c46e8359fbdbff14869ac8a7880b99d6b1564e9675843
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
-HTTP/1.1 204 No Content
-Date: Wed, 10 Jun 2026 14:26:04 GMT
+HTTP/1.1 404 Not Found
+Date: Wed, 10 Jun 2026 19:49:20 GMT
+Content-Type: application/json; charset=utf-8
 Connection: keep-alive
 Cache-Control: no-cache
-Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-Y5EXyUTz46dKrTcRinrgnQ=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-8MmPPILmaFWZl3+F8ZiXqw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
 Feature-Policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
 Referrer-Policy: strict-origin-when-cross-origin
 Strict-Transport-Security: max-age=63072000; includeSubDomains
@@ -43,14 +58,19 @@ X-Permitted-Cross-Domain-Policies: none
 X-Ratelimit-Limit: 300
 X-Ratelimit-Remaining: 299
 X-Ratelimit-Reset: 0
-X-Request-Id: d32b13b1-509a-42db-b6f6-321dd7e7b3b8
-X-Runtime: 0.229237
+X-Request-Id: 7cbda776-e67e-4816-b7ff-88cf227f98a5
+X-Runtime: 0.013427
 X-Xss-Protection: 0
-Cf-Cache-Status: DYNAMIC
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=JNmKC96bMq3B7oCms5qVQGNEBRO7YQJMVlZBx76dsvKLG53Kv1icuH4DyL5bDUi%2BeS0xUrJ13c9xccKTEChP6Ks9HR7NHnOpXO3zcZX1mo80fr%2BAycuXvOnbKs3%2BmWE%3D"}]}
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Cf-Cache-Status: DYNAMIC
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=s9iqvJfjsF9gtp14J0e5YrdZgLmWl64dihpHb7n4%2FQgbjeaj6JBa5BeAxOw81z2syEG6eIWttdXgVwuM2nH%2BE1pdeoxI3mOK6uyOx6g032zPdxuARmx6K6q5%2B%2BjfZtg%3D"}]}
 Server: cloudflare
-CF-RAY: a0990c82fb274986-MIA
+CF-RAY: a09ae60e1850a621-MIA
+Content-Length: 32
+
+{
+    "message": "Resource not found"
+}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.automation.features.ActualizarUsuarioFeature" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-06-10T14:25:58.470Z" hostname="jeferson-vega" time="3.429">
+<testsuite name="com.automation.features.ActualizarUsuarioFeature" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-06-10T19:49:14.628Z" hostname="jeferson-vega" time="2.612">
   <properties/>
-  <testcase name="actualizarUsuarioMethod()" classname="com.automation.features.ActualizarUsuarioFeature" time="2.941"/>
+  <testcase name="actualizarUsuarioMethod()" classname="com.automation.features.ActualizarUsuarioFeature" time="2.251">
+    <failure message="java.lang.AssertionError: &#10;Expected: is &lt;200&gt;&#10;     but: was &lt;404&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: is &lt;200&gt;
+     but: was &lt;404&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at net.serenitybdd.screenplay.QuestionConsequence.evaluateFor(QuestionConsequence.java:49)
+	at net.serenitybdd.screenplay.Actor.check(Actor.java:420)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:392)
+	at com.automation.features.ActualizarUsuarioFeature.actualizarUsuarioMethod(ActualizarUsuarioFeature.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
   <system-out><![CDATA[Request method:	PUT
-Request URI:	https://gorest.co.in/public/v2/users/8499444
+Request URI:	https://gorest.co.in/public/v2/users/8480476
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -16,13 +30,13 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "Jay",
-    "email": "solomon.kling@yahoo.com",
-    "gender": "Male",
-    "status": "inactive"
+    "name": "Lewis",
+    "email": "mahalia.gerlach@gmail.com",
+    "gender": "Female",
+    "status": "active"
 }
 Request method:	PUT
-Request URI:	https://gorest.co.in/public/v2/users/8499444
+Request URI:	https://gorest.co.in/public/v2/users/8480476
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -35,18 +49,17 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "name": "Jay",
-    "email": "solomon.kling@yahoo.com",
-    "gender": "Male",
-    "status": "inactive"
+    "name": "Lewis",
+    "email": "mahalia.gerlach@gmail.com",
+    "gender": "Female",
+    "status": "active"
 }
-HTTP/1.1 200 OK
-Date: Wed, 10 Jun 2026 14:26:01 GMT
+HTTP/1.1 404 Not Found
+Date: Wed, 10 Jun 2026 19:49:17 GMT
 Content-Type: application/json; charset=utf-8
 Connection: keep-alive
-Cache-Control: max-age=0, private, must-revalidate
-Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-vCENOeO50ncFoSXpPxJX9w=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
-Etag: W/"c726f37989aeaa2fd7b352727929ce58"
+Cache-Control: no-cache
+Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-D6Adci0YM9Xleulj9Q+tPw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
 Feature-Policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
 Referrer-Policy: strict-origin-when-cross-origin
 Strict-Transport-Security: max-age=63072000; includeSubDomains
@@ -57,23 +70,18 @@ X-Permitted-Cross-Domain-Policies: none
 X-Ratelimit-Limit: 300
 X-Ratelimit-Remaining: 299
 X-Ratelimit-Reset: 0
-X-Request-Id: 4e45d7cb-60d9-473c-847c-40d64b1129f2
-X-Runtime: 0.093565
+X-Request-Id: 9295774b-deec-4614-93fc-820c63ec4ce4
+X-Runtime: 0.020199
 X-Xss-Protection: 0
 Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
 Cf-Cache-Status: DYNAMIC
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=rpyPWG0ORSA5cZdeufnIe6V9vnJ7NLhVaha2I2L2wNlrOe%2F%2FYWbj4CalcKgE5lV74HroyauqwGMyF3KwyM2YKKtBYVIjrgrJ%2F%2BSdgz4bjJSwYh%2F4%2FtL%2FEweMXpBaCgY%3D"}]}
-Content-Encoding: gzip
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=qF3orQE3B%2BRBtWtTRpL7BGyFKkddt0WoxznIWNxLUj5qrkWm5CXNvFPYyqtqOpij5W%2BSm1aUN9Hb5eU%2Bm4YEFhmcoIT6etyLuCLqFkj31wZ%2Ffpep5RshOY01FrI90NE%3D"}]}
 Server: cloudflare
-CF-RAY: a0990c744e257a26-MIA
-Content-Length: 103
+CF-RAY: a09ae5fc5d8c4adf-MIA
+Content-Length: 32
 
 {
-    "id": 8499444,
-    "name": "Jay",
-    "email": "solomon.kling@yahoo.com",
-    "gender": "male",
-    "status": "inactive"
+    "message": "Resource not found"
 }
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -18,7 +18,7 @@
 <div class="tab-container">
 <ul class="tabLinks">
 <li>
-<a class="successGroup" href="#">Gradle Test Run :app:test</a>
+<a class="failureGroup" href="#">Gradle Test Run :app:test</a>
 </li>
 </ul>
 <div class="tab">
@@ -51,7 +51,7 @@
 </td>
 <td>
 <div class="infoBox">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -63,7 +63,7 @@
 </td>
 <td>
 <div class="infoBox duration">
-<div class="counter">1.538s</div>
+<div class="counter">0.844s</div>
 <p>duration</p>
 </div>
 </td>
@@ -72,13 +72,32 @@
 </div>
 </td>
 <td>
-<div class="infoBox success successRate">
-<div class="percent">100%</div>
+<div class="infoBox failures successRate">
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
 </tr>
 </table>
+</div>
+<div class="result-details">
+<h3>Failure details</h3>
+<span class="code">
+<pre id="root-0-test-failure-eliminarUsuario()">java.lang.AssertionError: 
+Expected: is &lt;204&gt;
+     but: was &lt;404&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at net.serenitybdd.screenplay.QuestionConsequence.evaluateFor(QuestionConsequence.java:49)
+	at net.serenitybdd.screenplay.Actor.check(Actor.java:420)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:392)
+	at com.automation.features.EliminarUsuarioTest.eliminarUsuario(EliminarUsuarioTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</pre>
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-failure-eliminarUsuario()">Copy</button>
+</span>
 </div>
 </div>
 </div>
@@ -111,11 +130,12 @@ Headers:		Authorization=Bearer ecf1c46e8359fbdbff14869ac8a7880b99d6b1564e9675843
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-HTTP/1.1 204 No Content
-Date: Wed, 10 Jun 2026 14:26:04 GMT
+HTTP/1.1 404 Not Found
+Date: Wed, 10 Jun 2026 19:49:20 GMT
+Content-Type: application/json; charset=utf-8
 Connection: keep-alive
 Cache-Control: no-cache
-Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-Y5EXyUTz46dKrTcRinrgnQ=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-8MmPPILmaFWZl3+F8ZiXqw=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
 Feature-Policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
 Referrer-Policy: strict-origin-when-cross-origin
 Strict-Transport-Security: max-age=63072000; includeSubDomains
@@ -126,14 +146,19 @@ X-Permitted-Cross-Domain-Policies: none
 X-Ratelimit-Limit: 300
 X-Ratelimit-Remaining: 299
 X-Ratelimit-Reset: 0
-X-Request-Id: d32b13b1-509a-42db-b6f6-321dd7e7b3b8
-X-Runtime: 0.229237
+X-Request-Id: 7cbda776-e67e-4816-b7ff-88cf227f98a5
+X-Runtime: 0.013427
 X-Xss-Protection: 0
-Cf-Cache-Status: DYNAMIC
-Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=JNmKC96bMq3B7oCms5qVQGNEBRO7YQJMVlZBx76dsvKLG53Kv1icuH4DyL5bDUi%2BeS0xUrJ13c9xccKTEChP6Ks9HR7NHnOpXO3zcZX1mo80fr%2BAycuXvOnbKs3%2BmWE%3D&quot;}]}
 Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+Cf-Cache-Status: DYNAMIC
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=s9iqvJfjsF9gtp14J0e5YrdZgLmWl64dihpHb7n4%2FQgbjeaj6JBa5BeAxOw81z2syEG6eIWttdXgVwuM2nH%2BE1pdeoxI3mOK6uyOx6g032zPdxuARmx6K6q5%2B%2BjfZtg%3D&quot;}]}
 Server: cloudflare
-CF-RAY: a0990c82fb274986-MIA
+CF-RAY: a09ae60e1850a621-MIA
+Content-Length: 32
+
+{
+    &quot;message&quot;: &quot;Resource not found&quot;
+}
 </pre>
 <button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stdout-eliminarUsuario()">Copy</button>
 </span>
@@ -148,7 +173,7 @@ CF-RAY: a0990c82fb274986-MIA
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 9.5.0</a> at Jun 10, 2026, 9:26:06 AM</p>
+<a href="https://www.gradle.org">Gradle 9.5.0</a> at Jun 10, 2026, 2:49:21 PM</p>
 </div>
 </div>
 </body>
