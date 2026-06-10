@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.automation.features.EliminarUsuarioTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-06-10T14:26:02.916Z" hostname="jeferson-vega" time="1.546">
+  <properties/>
+  <testcase name="eliminarUsuario()" classname="com.automation.features.EliminarUsuarioTest" time="1.538"/>
+  <system-out><![CDATA[Request method:	DELETE
+Request URI:	https://gorest.co.in/public/v2/users/8499443
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer ecf1c46e8359fbdbff14869ac8a7880b99d6b1564e9675843e6665d0061ba199
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	DELETE
+Request URI:	https://gorest.co.in/public/v2/users/8499443
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer ecf1c46e8359fbdbff14869ac8a7880b99d6b1564e9675843e6665d0061ba199
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 204 No Content
+Date: Wed, 10 Jun 2026 14:26:04 GMT
+Connection: keep-alive
+Cache-Control: no-cache
+Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-Y5EXyUTz46dKrTcRinrgnQ=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+Feature-Policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+Referrer-Policy: strict-origin-when-cross-origin
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: none
+X-Ratelimit-Limit: 300
+X-Ratelimit-Remaining: 299
+X-Ratelimit-Reset: 0
+X-Request-Id: d32b13b1-509a-42db-b6f6-321dd7e7b3b8
+X-Runtime: 0.229237
+X-Xss-Protection: 0
+Cf-Cache-Status: DYNAMIC
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=JNmKC96bMq3B7oCms5qVQGNEBRO7YQJMVlZBx76dsvKLG53Kv1icuH4DyL5bDUi%2BeS0xUrJ13c9xccKTEChP6Ks9HR7NHnOpXO3zcZX1mo80fr%2BAycuXvOnbKs3%2BmWE%3D"}]}
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Server: cloudflare
+CF-RAY: a0990c82fb274986-MIA
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -16,12 +16,14 @@ public class MetodoGet extends RestInteraction {
         this.resource = resource;
     }
 
-    @Step("{0} executes a GET on the resource #resource")
+    @Step("{0} executes a GET on the resource #resource") //Ayuda a generar el reporte de serenity
     @Override
     public <T extends Actor> void performAs(T actor) {
         rest().log().all().get(as(actor).resolve(this.resource)).then().log().all();
     }
+    //crea la peticion con base a los datos enviados, crea los logs y también crea los logs de la respuesa
 
+    //Ayuda a instanciar la clase, hacer la inyención de dependencias y hacer el seguimiento de Serenity
     public static MetodoGet to(String resource) {
         return instrumented(MetodoGet.class, resource);
     }

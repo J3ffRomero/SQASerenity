@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - actualizarUsuarioMethod()</title>
+<title>Test results - eliminarUsuario()</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
@@ -12,8 +12,8 @@
 <div id="content">
 <div class="breadcrumbs">
 <a class="breadcrumb" href="../index.html">all</a> &gt; 
-<a class="breadcrumb" href="index.html">com.automation.features.ActualizarUsuarioFeature</a> &gt; 
-<span class="breadcrumb">actualizarUsuarioMethod()</span>
+<a class="breadcrumb" href="index.html">com.automation.features.EliminarUsuarioTest</a> &gt; 
+<span class="breadcrumb">eliminarUsuario()</span>
 </div>
 <div class="tab-container">
 <ul class="tabLinks">
@@ -23,7 +23,7 @@
 </ul>
 <div class="tab">
 <h2>Gradle Test Run :app:test</h2>
-<h1>actualizarUsuarioMethod()</h1>
+<h1>eliminarUsuario()</h1>
 <div class="tab-container">
 <ul class="tabLinks">
 <li>
@@ -63,7 +63,7 @@
 </td>
 <td>
 <div class="infoBox duration">
-<div class="counter">2.941s</div>
+<div class="counter">1.538s</div>
 <p>duration</p>
 </div>
 </td>
@@ -85,8 +85,8 @@
 <div class="tab">
 <h2>standard output</h2>
 <span class="code">
-<pre id="root-0-test-stdout-actualizarUsuarioMethod()">Request method:	PUT
-Request URI:	https://gorest.co.in/public/v2/users/8499444
+<pre id="root-0-test-stdout-eliminarUsuario()">Request method:	DELETE
+Request URI:	https://gorest.co.in/public/v2/users/8499443
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -97,15 +97,9 @@ Headers:		Authorization=Bearer ecf1c46e8359fbdbff14869ac8a7880b99d6b1564e9675843
 				Content-Type=application/json
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
-Body:
-{
-    &quot;name&quot;: &quot;Jay&quot;,
-    &quot;email&quot;: &quot;solomon.kling@yahoo.com&quot;,
-    &quot;gender&quot;: &quot;Male&quot;,
-    &quot;status&quot;: &quot;inactive&quot;
-}
-Request method:	PUT
-Request URI:	https://gorest.co.in/public/v2/users/8499444
+Body:			&lt;none&gt;
+Request method:	DELETE
+Request URI:	https://gorest.co.in/public/v2/users/8499443
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -116,20 +110,12 @@ Headers:		Authorization=Bearer ecf1c46e8359fbdbff14869ac8a7880b99d6b1564e9675843
 				Content-Type=application/json
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
-Body:
-{
-    &quot;name&quot;: &quot;Jay&quot;,
-    &quot;email&quot;: &quot;solomon.kling@yahoo.com&quot;,
-    &quot;gender&quot;: &quot;Male&quot;,
-    &quot;status&quot;: &quot;inactive&quot;
-}
-HTTP/1.1 200 OK
-Date: Wed, 10 Jun 2026 14:26:01 GMT
-Content-Type: application/json; charset=utf-8
+Body:			&lt;none&gt;
+HTTP/1.1 204 No Content
+Date: Wed, 10 Jun 2026 14:26:04 GMT
 Connection: keep-alive
-Cache-Control: max-age=0, private, must-revalidate
-Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-vCENOeO50ncFoSXpPxJX9w=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
-Etag: W/&quot;c726f37989aeaa2fd7b352727929ce58&quot;
+Cache-Control: no-cache
+Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-Y5EXyUTz46dKrTcRinrgnQ=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
 Feature-Policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
 Referrer-Policy: strict-origin-when-cross-origin
 Strict-Transport-Security: max-age=63072000; includeSubDomains
@@ -140,26 +126,16 @@ X-Permitted-Cross-Domain-Policies: none
 X-Ratelimit-Limit: 300
 X-Ratelimit-Remaining: 299
 X-Ratelimit-Reset: 0
-X-Request-Id: 4e45d7cb-60d9-473c-847c-40d64b1129f2
-X-Runtime: 0.093565
+X-Request-Id: d32b13b1-509a-42db-b6f6-321dd7e7b3b8
+X-Runtime: 0.229237
 X-Xss-Protection: 0
-Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
 Cf-Cache-Status: DYNAMIC
-Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=rpyPWG0ORSA5cZdeufnIe6V9vnJ7NLhVaha2I2L2wNlrOe%2F%2FYWbj4CalcKgE5lV74HroyauqwGMyF3KwyM2YKKtBYVIjrgrJ%2F%2BSdgz4bjJSwYh%2F4%2FtL%2FEweMXpBaCgY%3D&quot;}]}
-Content-Encoding: gzip
+Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=JNmKC96bMq3B7oCms5qVQGNEBRO7YQJMVlZBx76dsvKLG53Kv1icuH4DyL5bDUi%2BeS0xUrJ13c9xccKTEChP6Ks9HR7NHnOpXO3zcZX1mo80fr%2BAycuXvOnbKs3%2BmWE%3D&quot;}]}
+Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
 Server: cloudflare
-CF-RAY: a0990c744e257a26-MIA
-Content-Length: 103
-
-{
-    &quot;id&quot;: 8499444,
-    &quot;name&quot;: &quot;Jay&quot;,
-    &quot;email&quot;: &quot;solomon.kling@yahoo.com&quot;,
-    &quot;gender&quot;: &quot;male&quot;,
-    &quot;status&quot;: &quot;inactive&quot;
-}
+CF-RAY: a0990c82fb274986-MIA
 </pre>
-<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stdout-actualizarUsuarioMethod()">Copy</button>
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stdout-eliminarUsuario()">Copy</button>
 </span>
 </div>
 </div>

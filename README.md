@@ -15,3 +15,14 @@ Instalación
 3. Asegurarse de estar haciendo uso de la misma API
 4. Asegurarse de cambiar el token Bearer de la API
 5. Ejecutar las pruebas (Tener en cuenta el ID de los usuarios para la eliminación y actualización, ya que esto puede generar errores).
+
+Ejecución de pruebas
+* Para ejecutar las pruebas, se debe usar el comando "./gradlew clean test" para obtener un reporte detallado de la ejecución de las pruebas sin generar el index
+
+* Para ejecutar las pruebas y generar el informe index, ejecutar el comando "./gradlew clean test aggregate"
+
+* Para ejecutar las pruebas en un ambiente diferente al predeterminado utiliza el siguente comando " ./gradlew test aggregate -Denvironment=qa "
+
+* Si hay casos fallidos, el reporte generado será en la ruta "../app/build/reports/tests/test/index.html"
+
+* El informe general del index, será generado en la ruta "..app/target/site/serenity/index.html"

@@ -27,7 +27,7 @@ public class EliminarUsuarioTest extends BaseTest{
 
     @Test
     public void eliminarUsuario(){
-        david.attemptsTo(EliminarUsuarioTask.eliminarUsuario(8480534));
+        david.attemptsTo(EliminarUsuarioTask.eliminarUsuario(8499443));
         david.should(seeThat("El código resultante fue 204", RespuestaCode.es(), is(204)));
     }
 }

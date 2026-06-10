@@ -19,7 +19,7 @@ public class ObtenerUsuariosTask implements Task {
                                 .log().all()));
     }
 
-    public static ObtenerUsuariosTask lista() {
+    public static ObtenerUsuariosTask obtenerUsuarios() {
         return instrumented(ObtenerUsuariosTask.class);
     }
 }
