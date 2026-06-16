@@ -13,7 +13,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class PersonaResponse {
 
     @JsonProperty("id")
-    private int personID;
+    private Integer personID;
 
     @JsonProperty("name")
     private String personName;

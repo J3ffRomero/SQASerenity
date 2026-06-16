@@ -1,6 +1,5 @@
 package com.automation.tasks;
 
-
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import com.automation.interactions.MetodoDelete;
@@ -12,7 +11,7 @@ public class EliminarUsuarioTask implements Task {
     private final int usuarioID;
     private EnvironmentVariables enviromentVariables;
 
-    public EliminarUsuarioTask(int usuarioID){
+    public EliminarUsuarioTask(int usuarioID) {
         this.usuarioID = usuarioID;
     }
 
@@ -20,13 +19,12 @@ public class EliminarUsuarioTask implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 MetodoDelete.to("/users/" + usuarioID)
-                        .with(request->request
+                        .with(request -> request
                                 .header("Authorization", "Bearer " + enviromentVariables.getProperty("token"))
-                                .log().all())
-        );
+                                .log().all()));
     }
 
-    public static EliminarUsuarioTask eliminarUsuario(int usuarioID){
+    public static EliminarUsuarioTask eliminarUsuario(int usuarioID) {
         return instrumented(EliminarUsuarioTask.class, usuarioID);
     }
 }

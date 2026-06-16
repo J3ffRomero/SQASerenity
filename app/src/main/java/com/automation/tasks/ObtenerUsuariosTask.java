@@ -18,8 +18,7 @@ public class ObtenerUsuariosTask implements Task {
                         .with(request -> request
                                 .header("Authorization",
                                         "Bearer " + enviromentVariables.getProperty("token"))
-                                .header("Content-Type", "application/json")
-                                .log().all()));
+                                .header("Content-Type", "application/json")));
     }
 
     public static ObtenerUsuariosTask obtenerUsuarios() {

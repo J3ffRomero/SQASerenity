@@ -8,11 +8,9 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 import com.automation.model.request.PersonaRequest;
 import com.automation.interactions.MetodoPost;
 
-
 public class CrearUsuarioTask implements Task {
     private final PersonaRequest payload;
     private EnvironmentVariables enviromentVariables;
-
 
     public CrearUsuarioTask(PersonaRequest payload) {
         this.payload = payload;
@@ -22,12 +20,10 @@ public class CrearUsuarioTask implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 MetodoPost.to("/users")
-                        .with(request->request
-                                .header("Authorization", "Bearer "+enviromentVariables.getProperty("token"))
+                        .with(request -> request
+                                .header("Authorization", "Bearer " + enviromentVariables.getProperty("token"))
                                 .header("Content-Type", "application/json")
-                                .body(payload)
-                                .log().all())
-        );
+                                .body(payload)));
     }
 
     public static CrearUsuarioTask conDatos(PersonaRequest payload) {
